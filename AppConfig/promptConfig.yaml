@@ -1,0 +1,14 @@
+# planner Agent
+
+planner_prompt: [
+  {"role": "system", "content": "Given user message, decide whether to return simple response to user query or do proper analysis then generate a response. if simple response is needed return 'responder_agent' else return 'analyst_agent' "},
+  {"role": "user", "content": "msg: {user_msg}"}]
+
+responder_prompt: [
+  {"role": "system", "content": "Given user message, answer the user query in briefly and concisely"},
+  {"role": "user", "content": "msg: {user_msg} \n\n chat_history: {memory}"}]
+
+
+analyst_sum_prompt: [
+  {"role": "system", "content": "Given user message, summarize the text briefly and concisely"},
+  {"role": "user", "content": "msg: {user_msg} \n\n chat_history: {memory}"}]

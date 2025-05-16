@@ -1,0 +1,10 @@
+# Mistral model
+API_KEY: ''
+API_URL: ''
+
+#gpt4o
+api_key: ''
+api_base: ''
+api_type: 'azure'
+api_version: '2024-08-01-preview'
+azure_generic_deployment_name: 'gpt-4o'
